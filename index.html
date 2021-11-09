@@ -5,46 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/app.css">
-
+    
     <title>Moovin</title>
     <meta name="description" content="Moovin">
 </head>
 <body>
     <section class="info">
-        <ul class="container">
-            <li>
-                <div class="phoneNumber">
+        <div class="clasae">
+            <ul class="container">
+                <li class="phoneNumber">
                     <img src="./public/phone.png" alt="Telefone">
                     <span>(51) 9 9920 0350</span>
-                </div>
-                <div class="whats">
-                    <img src="./public/whats.png" alt="Whatsapp">
-                    <span>(51) 9 9920 0350</span>
-                </div>
-                <div class="options">
-                    <a href="#">LISTA DE DESEJOS</a>
-                    <a href="#">FALE CONOSCO</a>
-                    <a href="#">TROCAS E DEVOLUÇÕES </a>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section class="navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="./public/logo.png" alt="Logo">
-                </div>
-                <div class="col-md-9">
-                    <div class="search">
-                        <input type="text" placeholder="O que você procura?">
-                        <button type="submit">
-                            <img src="./public/search.png" alt="Buscar">
-                        </button>
-                    </div>
+                    </li>
+                    <li class="whats">
+                        <img src="./public/whats.png" alt="Whatsapp">
+                        <span>(51) 9 9920 0350</span>
+                    </li>
+                    <li class="options">
+                        <ul>
+                            <li> <a href="#">LISTA DE DESEJOS</a></li>
+                            <li> <a href="#">FALE CONOSCO</a></li>
+                            <li> <a href="#">TROCAS E DEVOLUÇÕES </a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+        </section>
+        <main>
+            <img id="logo" src="./public/logo.png" alt="Logo">
+            <div class="">
+                <div class="search">
+                    <input type="text" placeholder="O que você está procurando?">
+                    <button type="submit">
+                        <img src="./public/search.png" alt="Buscar">
+                    </button>
                 </div>
             </div>
-        </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Menu</button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Minha conta</a></li>
+                    <li><a class="dropdown-item" href="#">Meus pedidos</a></li>
+                    <li><a class="dropdown-item" href="#">Lista de desejos</a></li>
+                </ul>
+            </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </body>
 </html>
