@@ -11,7 +11,7 @@
     padding: .12rem 0;
    
 }
-.info ul{
+.info .infoList{
     vertical-align: center;
     margin: 0 0 0 21%;
     padding: .2rem 0;
@@ -34,11 +34,13 @@
 }
 
 .info .options{
-    margin-left: 3rem;
+    margin-left: 21rem;
+    list-style: none;
+    display: inline-block;
 }
 
 .info .options li{
-    margin-right: 4rem;
+    margin-right: 3rem;
 
 }
 
@@ -72,8 +74,8 @@ main #logo{
 }
 
 .search input{
-  border: none;
-    width: 31.5rem;
+    border: none;
+    width: 35rem;
     height: 2.8rem;
    
 }
@@ -118,7 +120,7 @@ main #logo{
     left: auto !important;
     border: 2px solid #00000033;
     text-align: center;
-    padding: 1.5rem .5rem;
+    padding: 1.5rem .2rem;
     border-radius: 5px;
 }
 
@@ -136,3 +138,40 @@ main #logo{
   
 }
 
+.dropdown-menu li :hover{
+    background-color: #F1F1F1;
+}
+
+
+
+
+.shopcart{
+    margin-left: 4.5rem;
+    position: relative;
+    
+}
+
+.shopcart a img{
+    width: 1.7rem;
+}
+
+.shopcart .contentItem{
+    background-color: black;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.shopcart::after{
+    content: "+50";
+    font-size: 12px;
+    position: absolute;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    padding: 4px 0 0 2px;
+    background-color: #000;
+    color: #fff;
+    top: 10px;
+    right: -12px;
+
+}
