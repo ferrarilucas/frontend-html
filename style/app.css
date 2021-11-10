@@ -8,11 +8,12 @@
     background-color: #F1F1F1;
     color: #000;
     font-size: 12px;
+    padding: .12rem 0;
    
 }
 .info ul{
     vertical-align: center;
-    margin: 0 0 0 25%;
+    margin: 0 0 0 21%;
     padding: .2rem 0;
     list-style: none;
     display: inline-block;
@@ -28,6 +29,19 @@
     width: 15px;
 }
 
+.info .phoneNumber{
+    margin-right: 4rem;
+}
+
+.info .options{
+    margin-left: 3rem;
+}
+
+.info .options li{
+    margin-right: 4rem;
+
+}
+
 a{
     color: #000;
     text-decoration: none;
@@ -38,27 +52,87 @@ a:hover{
     text-decoration: none;
 }
 
-.dropdown-menu::before {
-    
-    position:relative;
-    top: -.3rem;
-    left: 90%;
-    height: 2px;
-    display: inline-block;
-    margin-left: 0.255em;
-    vertical-align: 0.255em;
-    content: "";
-    border-bottom: 0.4em solid;
-    border-left: 0.4em solid transparent  ;
-    border-top: 0;
-    border-right: 0.4em solid transparent;
-}
-
 main{
-    margin: 0 0 0 25%;
+    margin: 0 0 0 21%;
     display: inline-flex;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 main #logo{
     width: 139px;
+    margin-right: 6rem;
 }
+
+.search{
+    border: 2px solid #DFDFDF;
+    border-radius: 5px;
+    padding: 0 1rem;
+    margin-right: 4.5rem;
+}
+
+.search input{
+  border: none;
+    width: 31.5rem;
+    height: 2.8rem;
+   
+}
+
+.search input:focus, .search button:focus{
+    outline: none;
+}
+
+.search button{
+    border: none;
+    background-color: transparent;
+}
+
+
+.search button img{
+    width: 12px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    transform: translate3d(0, 27px, 0px); 
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+}
+
+.dropdown a{
+    font-weight: 600;
+}
+.dropdown a:focus{
+    border: none !important;
+    outline: none;
+}
+.dropdown .dropdown-toggle::after{
+    content : url('../public/chevron-down.svg');
+    border: none;
+}
+
+.dropdown-menu{
+    right: -2rem !important;
+    left: auto !important;
+    border: 2px solid #00000033;
+    text-align: center;
+    padding: 1.5rem .5rem;
+    border-radius: 5px;
+}
+
+.dropdown-menu::before{
+    content: "";
+    position: absolute;
+    padding: 4px;
+    box-shadow: 1.5px -1.5px 0 .5px #00000033 inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    transform: rotate(135deg);
+    top: -8px;
+    right: 30px;
+    background: #F1F1F1;
+  
+}
+
