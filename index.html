@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style/app.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./src/app.js"></script>
     <title>Moovin</title>
     <meta name="description" content="Moovin">
 </head>
@@ -37,8 +38,8 @@
         <img id="logo" src="./public/logo.png" alt="Logo">
         <div class="">
             <div class="search">
-                <input type="text" placeholder="O que você está procurando?">
-                <button type="submit">
+                <input type="text" id="inputSearch" placeholder="O que você está procurando?">
+                <button type="submit" onclick="getSearch('#inputSearch')">
                     <img src="./public/search.png" alt="Buscar">
                 </button>
             </div>
