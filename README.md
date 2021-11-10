@@ -1,5 +1,16 @@
 # Frontend <img src="https://www.moovin.com.br/assets/images/svg/logo2.svg" width="50">
 
+### Resolução
+
+Layout implementado, pronto para capturar os dados de busca e redirecionar o cliente diretamente para o whatsapp.
+
+Tecnologias utilizadas:
+- HTML5
+- CSS3
+- Javascript
+- Jquey
+- Bootstrap
+
 ### Desafio
 
 Implementar apenas a parte visual do topo de uma loja virtual, seguindo o modelo de layout proposto.
