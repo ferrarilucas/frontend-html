@@ -142,7 +142,10 @@ main #logo{
     background-color: #F1F1F1;
 }
 
-
+.dropdown-menu li a:focus{
+    font-weight: 800;
+    color: #000;
+}
 
 
 .shopcart{
